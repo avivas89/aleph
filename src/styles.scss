@@ -1,1 +1,568 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "theme-aleph";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+mat-form-field.mat-form-field {
+  font-size: 16px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+ 
+
+/*------------------------------------
+--------------Tipography
+-------------------------------------*/ 
+h1,h2,h3,h4,h5,h6, footer .mat-list-item a  {
+	font-family: 'Domine', serif!important;
+}
+p,span,a,ul,li {
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+h1,h2,h3,h4,h5,h6,p,body {
+	color: #293435;
+}
+
+.f-light {
+	font-weight: 300!important;
+}
+
+.f-regular {
+    font-weight: 400!important;
+} 
+.f-medium {
+	font-weight: 500!important;
+}
+h2:after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    left: 0;
+    bottom: -10px;
+    background: #D60812;
+}
+/*------------------------------------
+--------------buttons
+-------------------------------------*/
+.btn-outline {
+	background: transparent;
+	border: 1px solid #D60812!important;
+    color: #D60812;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 0 25px!important;
+    margin: 0!important;
+    line-height: 36px;
+    display: inline-block;
+}
+
+.btn-outline span {
+    color: #D60812;
+}
+
+.btn-outline:hover, .btn-outline:focus {
+	background: #D60812;
+}
+.btn-outline:hover, .btn-outline:focus,
+.btn-outline:hover span, .btn-outline:focus span {
+	color: #fff;
+	text-decoration: none
+}
+
+.btn-outline.color-grey {
+	border: 1px solid #293435!important;
+	color: #293435;
+}
+.btn-outline.color-grey span {
+    color: #293435;
+}
+
+.btn-outline.color-grey:hover, .btn-outline.color-grey:focus {
+	background: transparent;
+	text-decoration: none
+}
+.btn-outline.color-grey:hover, .btn-outline.color-grey:focus, 
+.btn-outline.color-grey:hover span, .btn-outline.color-grey:focus span {
+	color: #293435;
+}
+
+/*------------------------------------
+--------------Nav
+------------------------------------*/
+.header-nav {
+    padding-top: 15px;
+    padding-bottom: 35px;
+}
+.logo-brand .mat-ripple.mat-button-ripple {
+    display: none;
+}
+.logo-brand img {
+    width: 135px;
+    margin-right: 29px;
+}
+.logo-brand span span {
+    margin-left: 27px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.logo-brand span span:before {
+    content: '';
+    position: absolute;
+    left: -24px;
+    width: 1px;
+    background-color: #293435;
+    height: 25px;
+    top: -6px;
+}
+.form-search .mat-form-field-appearance-fill .mat-form-field-flex {
+    background: transparent;
+    padding-top: 0;
+    border-radius: 3px;
+    align-items: center;
+}
+
+.form-search input, .form-search input::placeholder {
+    color: #ffffff!important;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 35px;
+}
+.form-search .mat-form-field-infix {
+    width: auto;
+    max-width: 100%;
+    border: 0;
+    padding: 5px 0;
+}
+.form-search .mat-form-field-appearance-fill .mat-form-field-underline::before {
+    background: #fff;
+}
+.form-search input {
+    vertical-align: middle;
+}
+
+.form-search mat-icon.mat-icon {
+    font-size: 2.5em;
+    width: auto;
+    height: auto;
+    color: #fff;
+}
+
+alp-search-dialog button.close {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 3px;
+    right: 3px;
+    opacity: 1;
+    text-shadow: none;
+}
+
+alp-search-dialog button.close mat-icon {
+    font-size: 3em;
+    width: auto;
+    height: auto;
+}
+.auth-nav a:hover {
+    text-decoration: none;
+    opacity: .9;
+}
+.auth-nav a span {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+.auth-nav a span mat-icon {
+    font-size: 18px;
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+.auth-nav a:first-of-type span mat-icon {
+    margin-right: 6px;
+}
+.auth-nav a:last-child:after {content: '';position: absolute;left: 0;top: -3px;width: 1px;height: 25px;background-color: #293435;}
+
+.auth-nav a {
+    position: relative;
+    padding: 0 40px;
+    line-height: 20px;
+}
+alp-search-dialog {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mat-dialog-container {
+    background: rgba(41, 52, 53, .9);
+}
+button.search {
+    background: #f2f2f2;
+    height: auto;
+    line-height: 30px;
+    width: 360px;
+    max-width: 100%;
+    text-align: left;
+}
+
+button.search span {
+    font-weight: 300;
+    font-style: italic;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*------------------------------------
+-------------nav_types_app
+------------------------------------*/
+.nav_types_app a.mat-button:not(:last-child) {
+    margin-right: 25px!important;
+}
+
+.nav_types_app a.mat-button {
+    padding: 3px 25px !important;
+    letter-spacing: 0;
+    font-size: 16px;
+    min-width: 125px;
+    width: auto;
+}
+.nav_types_app a.has_menu i.material-icons {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    font-size: 20px;
+    width: 45px;
+    top: 0;
+    line-height: 40px;
+    background: #D60812;
+    color: #fff;
+}
+
+.nav_types_app a.has_menu {
+    padding-left: 60px!important;
+}
+
+a.close-sidenav div {
+    justify-content: flex-end;
+}
+/*------------------------------------
+--------------slide home
+------------------------------------*/
+.carousel-caption {
+    left: 10%;
+    top: 50%;
+    bottom: auto;
+    transform: translate(0, -50%);
+    text-align: left;
+}
+ngb-carousel.carousel.slide {
+    outline: none;
+    -webkit-appearance: none;
+    margin-bottom: 80px;
+}
+
+.carousel-indicators li {
+    border-radius: 100%;
+    border: 1px solid #000;
+    height: 8px;
+    width: 8px;
+    margin-right: 10px;
+    position: relative;
+    opacity:1;
+}
+.carousel-indicators li:after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 1px;
+    left: 1px;    
+    border-radius: 100%;
+}
+
+.carousel-indicators li.active:after,
+.carousel-indicators li:hover:after {
+   background: #D60812; 
+}
+/*------------------------------------
+--------------Tabs
+------------------------------------*/
+mat-tab-group.mat-tab-group.mat-primary {
+    padding-top: 15px!important;
+}
+.nav_types_app {
+    margin-bottom: 60px;
+}
+.mat-tab-label-container {
+    margin-bottom: 25px;
+}
+
+.mat-tab-label, .mat-tab-link {
+    color: #293435;
+    font-weight: 500;
+    background: #f2f2f2;
+    margin-right: 15px;
+    height: auto!important;
+    padding: 6px 15px!important;
+    border-radius: 3px;
+    opacity: 1!important;
+    text-transform: uppercase;
+    font-size: 11px;
+    min-width: 115px!important;
+    letter-spacing: 1px;
+}
+
+.mat-tab-label.mat-tab-label-active, .mat-tab-label:hover {
+    color: #fff;
+    background: #293435;
+    opacity: 1;
+}
+.mat-tab-label.mat-tab-label-active div, .mat-tab-label:hover div {
+    color: #fff;
+}
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background: transparent;
+}
+.mat-card {
+    background: transparent;
+    padding: 16px 0;
+}
+.mat-card-content {
+    color: #293435;
+}
+.mat-card-image {
+    max-width: 100%;
+    margin: 0!important;
+}
+.app_featureds .mat-list-item-content {
+    padding: 0!important;
+    overflow: hidden;
+}
+.app_featureds mat-list-item {
+    height: auto!important;
+}
+.mat-card-actions {
+    display: flex!important;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0!important;
+}
+.mat-card-content p.subtitle {
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.mat-card-content h2 {
+    margin-bottom: 35px!important;
+}
+.mat-card-content p:not(.subtitle) {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.35;
+    margin-bottom: 7px;
+}
+.tags a {
+    color: #D60812!important;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    padding: 0;
+    line-height: 24px;
+}
+.tags a:not(:last-child) {
+    margin-right: 15px;
+}
+
+.tags a span {
+    color: #D60812!important;
+}
+
+.tags a i {
+    font-size: 18px;
+    margin-left: -5px;
+}
+p.price small {
+    color: #B3B3B3;
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+
+p.price span {
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+p.price span b {
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 5px;
+    transform: translateY(-3px);
+}
+.app_featureds .mat-card {
+    padding: 35px 0;
+}
+.app_featureds mat-list-item.mat-list-item:not(:last-of-type) {
+    border-bottom: 2px solid #E6E6E6;
+}
+.see-more {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.see-more button {
+    padding: 3px 45px!important;
+    font-size: 17px;
+    letter-spacing: 0;
+}
+/*------------------------------------
+--------------Footer
+------------------------------------*/
+
+footer p.mat-subheader {
+    font-weight: 700!important;
+    color: #fff!important;
+    letter-spacing: 3px;
+    position: relative;
+    padding-bottom: 0;
+    margin-bottom: 15px!important;
+}
+
+footer p.mat-subheader:after {content: '';width: calc(100% - 32px);left: 16px;bottom: 4px;height: 1px;background: #fff;position: absolute;}
+
+footer .mat-list-item {
+    font-size: 18px!important;
+    height: auto!important;
+    margin-bottom: 9px!important;
+}
+footer a, footer .socials_links a button span {
+    color: #fff;    
+}
+
+footer .socials_links a button span i {
+    font-size: 23px;
+}
+footer .socials_links a.facebook button span i {
+    font-size: 20px;
+}
+
+footer .socials_links a:not(:last-child) {
+    margin-right: 5px;
+}
+
+footer a:hover, .socials_links a:hover button span {
+    color: #D60812;
+    text-decoration: none;
+}
+nav.socials_links {
+    margin-top: 15px;
+}
+a.whatsapp {
+    font-size: 13px;
+    padding: 0 20px;
+}
+
+a.whatsapp i {
+    font-size: 18px;
+}
+
+
+
+
+@media only screen and (min-width:768px) {
+	.app_featureds .mat-card {
+	    display: grid!important;
+	    grid-template-columns: 18% 62% 20%;
+	    align-items: center;
+	}
+	.app_featureds .mat-card-content {
+	    padding-left: 25px;
+        margin-bottom: 0;
+	}
+    .w-65 {
+       width: 65%!important
+    } 
+    .carousel-indicators {
+        justify-content: flex-start;
+        margin: 0;
+        left: 11%;
+        bottom: -10px;
+    }
+    .form-search .mat-form-field-infix {
+        width: 600px;
+    }
+}
+
+@media (max-width:767px) {
+    button.search  {
+        width: auto;
+        background:transparent;
+    }
+
+    .carousel-caption {
+        position: relative;
+        left: 0;
+        transform: none;
+    }
+    .carousel-indicators {
+        bottom: -45px;
+    }
+
+    .nav_types_app a.mat-button {
+        margin-bottom: 30px!important;
+    }
+    .mat-card-content p.subtitle {
+        margin-top: 15px;
+    }
+    nav.socials_links:after {
+        content: '';
+        position: absolute;
+        left: 16px;
+        top: 0;
+        width: calc(100% - 32px);
+        height: 1px;
+        background: #fff;
+    }
+
+    nav.socials_links {
+        margin-top: 20px;
+        padding: 10px 10px;
+        position: relative;
+    }
+    .mat-dialog-content {
+        margin: 0!important;
+        padding: 0!important;
+        width: 100%;
+        text-align: center;
+    }
+
+    alp-search-dialog mat-form-field {
+        width: 100%;
+    }
+    .form-search input, .form-search input::placeholder {
+        font-size: 20px;
+    }
+    
+}
+
+@media (max-width:574px) {
+    .app_featureds button {
+        width: 100%;
+    }
+}
